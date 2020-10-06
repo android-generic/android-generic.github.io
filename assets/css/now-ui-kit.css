@@ -499,8 +499,8 @@ pre {
   margin-left: auto; }
 
 .row {
-  /* display: flex; */
-  display: block;
+  display: flex;
+  /* display: block; */
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
