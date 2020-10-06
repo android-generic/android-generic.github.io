@@ -455,13 +455,29 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
+  @media (max-width: 540px) {
+    .pre-scrollable {
+      max-height: 40px; } }
+  @media (min-width: 576px) {
+    .pre-scrollable {
+      max-height: 340px; } }
+  @media (min-width: 768px) {
+    .pre-scrollable {
+      max-width: 420px; } }
+  @media (min-width: 992px) {
+    .pre-scrollable {
+      max-width: 560px; } }
+  @media (min-width: 1200px) {
+    .pre-scrollable {
+      max-width: 1340px; } }
 
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  display: block; }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -483,7 +499,8 @@ pre {
   margin-left: auto; }
 
 .row {
-  display: flex;
+  /* display: flex; */
+  display: block;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
