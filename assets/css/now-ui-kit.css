@@ -327,6 +327,15 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1em; }
+  
+.trademark {	
+    font-size: 32%;
+    text-align-last: start;
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -1.4em;
+}
 
 .lead {
   font-size: 1.3rem;
