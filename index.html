@@ -58,12 +58,12 @@
             </a>
           </li>
           <li class="nav-item mx-3 mx-md-1">
-            <a class="nav-link" href="https://gitlab.com/android-generic/vendor_android-generic/-/blob/q10/README.md" data-placement="bottom" data-toggle="tooltip" title="Read the documentation">
+            <a class="nav-link" href="https://github.com/android-generic/vendor_ag/#README" data-placement="bottom" data-toggle="tooltip" title="Read the documentation">
               <i class="fa fa-fw fa-2x fa-file-text-o"></i>
             </a>
           </li>
           <li class="nav-item ml-1">
-            <a class="nav-link" href="https://gitlab.com/android-generic/vendor_android-generic" data-placement="bottom" data-toggle="tooltip" title="Checkout the repo">
+            <a class="nav-link" href="https://github.com/android-generic/vendor_ag" data-placement="bottom" data-toggle="tooltip" title="Checkout the repo">
               <i class="fa fa-fw fa-2x fa-gitlab"></i>
             </a>
           </li>
@@ -239,8 +239,8 @@
                     <div class="col-md-4">
                       <div class="card-body p-4">
                         <h1>Step One</h1>
-                        <p class="mb-0 lead">Clone our vendor repo into your project</p><a class="btn btn-primary mt-3" href="https://gitlab.com/android-generic/vendor_android-generic" target="_blank"><i class="fa fa-fw fa-git"></i>Clone Me</a>
-                        <p class="bg-dark text-left rounded border-bottom border-top mt-3 py-2 px-3">$ git clone&nbsp;https://gitlab.com/android-generic/vendor_android-generic vendor/android-generic</p>
+                        <p class="mb-0 lead">Clone our vendor repo into your project</p><a class="btn btn-primary mt-3" href="https://github.com/android-generic/vendor_ag" target="_blank"><i class="fa fa-fw fa-git"></i>Clone Me</a>
+                        <p class="bg-dark text-left rounded border-bottom border-top mt-3 py-2 px-3">$ git clone&nbsp;https://github.com/android-generic/vendor_ag vendor/ag</p>
                       </div>
                     </div>
                     <div class="col-md-4">
@@ -253,15 +253,10 @@
                     <div class="col-md-4">
                       <div class="card-body p-4">
                         <h1>Step Three</h1>
-                        <p class="mb-0 lead">Setup and sync the newly added build tools and patch things automatically afterwards</p>
-                        <p class="bg-dark text-left rounded border-bottom border-top py-2 mt-3">&nbsp; &nbsp; &nbsp; $ build-x86 -s<br></p>
+                        <p class="mb-0 lead">Launch the menu to use the newly added build tools.&nbsp;<br>Check the project <a href="https://github.com/android-generic/vendor_ag#readme" target="_BLANK_">README.md</a> for details</p>
+                        <p class="bg-dark text-left rounded border-bottom border-top py-2 mt-3">&nbsp; &nbsp; &nbsp; $ ag-menu pc<br></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="card-body p-4">
-                    <h1>Step Four</h1>
-                    <p class="mb-0 lead">Use the build scripts to target 32bit or 64bit builds, sit back, and relax</p>
-                    <p class="bg-dark text-left rounded border-bottom border-top py-2 mt-3">&nbsp; &nbsp; &nbsp; $ build-x86 android_x86_64-userdebug none crosnone<br></p>
                   </div>
                   <p class="">Some variations in process may occur depending on what code has been used prior to adding our project</p>
                 </div>
@@ -271,8 +266,8 @@
                     <div class="col-md-4">
                       <div class="card-body p-4">
                         <h1>Step One</h1>
-                        <p class="mb-0 lead">Clone our vendor repo into your project</p><a class="btn btn-primary mt-3" href="https://gitlab.com/android-generic/vendor_android-generic" target="_blank"><i class="fa fa-fw fa-git"></i>Clone Me</a>
-                        <p class="bg-dark text-left rounded border-bottom border-top mt-3 py-2 px-3">$ git clone&nbsp;https://gitlab.com/android-generic/vendor_android-generic vendor/android-generic</p>
+                        <p class="mb-0 lead">Clone our vendor repo into your project</p><a class="btn btn-primary mt-3" href="https://github.com/android-generic/vendor_ag" target="_blank"><i class="fa fa-fw fa-git"></i>Clone Me</a>
+                        <p class="bg-dark text-left rounded border-bottom border-top mt-3 py-2 px-3">$ git clone&nbsp;https://github.com/android-generic/vendor_ag vendor/ag</p>
                       </div>
                     </div>
                     <div class="col-md-4">
@@ -285,32 +280,8 @@
                     <div class="col-md-4">
                       <div class="card-body p-4">
                         <h1>Step Three</h1>
-                        <p class="mb-0 lead">Setup the project to work with your existing vendor setup</p>
-                        <p class="mb-0">Normally your vendor_name is what you call the vendor folder name. EX: vendor/bliss</p>
-                        <p class="bg-dark text-left rounded border-bottom border-top py-2 mt-3">&nbsp; &nbsp; &nbsp; $ build-x86 -n vendor_name<br></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="card-body p-4">
-                        <h1>Step Four</h1>
-                        <p class="mb-0 lead" contenteditable="true">Setup the manifest remove.xml for your new vendor and sync the build tools and patch things automatically afterwards</p>
-                        <p class="bg-dark text-left rounded border-bottom border-top py-2 mt-3">&nbsp; &nbsp; &nbsp; $ build-x86 -s</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card-body p-4">
-                        <h1>Step Five</h1>
-                        <p class="mb-0 lead">Use the conflicts list after the patching phase has completed to determine if any patches need a vendor specific resolution.&nbsp;<br></p>
-                        <p class="mb-0">Then add the patches to the created vendor folders within vendor/android-generic</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card-body p-4">
-                        <h1>Step Six</h1>
-                        <p class="mb-0 lead">Use the build scripts to target 32bit or 64bit builds, sit back, and relax</p>
-                        <p class="bg-dark text-left rounded border-bottom border-top mt-3 py-2 px-3">$ build-x86 android_x86_64-userdebug none crosnone<br></p>
+                        <p class="mb-0 lead">Launch the menu to use the newly added build tools.&nbsp;<br>Check the project <a href="https://github.com/android-generic/vendor_ag#readme" target="_BLANK_">README.md</a> for details</p>
+                        <p class="bg-dark text-left rounded border-bottom border-top py-2 mt-3">&nbsp; &nbsp; &nbsp; $ ag-menu pc<br></p>
                       </div>
                     </div>
                   </div>
@@ -358,21 +329,19 @@
   <div class="py-5 bg-dark" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(44, 44, 44, 0.0)), url(&quot;assets/img/bg11.jpg&quot;);	background-size: 100%, cover;	background-position: top left, center;	background-repeat: repeat, repeat;">
     <div class="container">
       <div class="row my-4">
-        <div class="col-xl-4 mx-auto col-11 col-md-8 px-2">
+        <div class="col-xl-4 mx-auto col-11 col-md-8 px-2" style="">
           <div class="card bg-primary mx-auto">
             <div class="card-body text-center mx-auto">
               <h5 class="mb-4">
                 <b>Links</b></h5>
               <div class="row mt-4 pt-2">
-                <div class="col"><a href="https://t.me/androidgenericpc"><button class="btn mt-4 mb-3 rounded btn-sm btn-secondary text-light"><i class="fa fa-fw fa-telegram fa-2x" draggable="true"></i>&nbsp;AG PC - Dev Chat</button></a>
+                <div class="col" style="">
+                  <h6 class="pb-0 mb-0">For Developers:</h6><a href="https://github.com/android-generic/vendor_ag#readme" target="_blank"><a href="https://t.me/androidgenericpc"><button class="btn mt-4 mb-3 rounded btn-sm btn-secondary text-light"><i class="fa fa-fw fa-telegram fa-2x" draggable="true"></i>&nbsp;AG PC - Dev Chat</button></a><button class="btn mt-4 mb-3 btn-light rounded btn-sm text-primary"><i class="fa fa-fw fa-2x fa-file-text-o"></i>&nbsp;AG 2.0 Docs</button></a>
                 </div>
-                <div class="col"><a href="https://t.me/androidgenericgsi"><button class="btn mt-4 mb-3 rounded btn-sm btn-secondary text-light"><i class="fa fa-fw fa-telegram fa-2x" draggable="true"></i>&nbsp;AG GSI - Dev Chat</button></a>
-                </div>
-                <div class="col" style=""><a href="https://gitlab.com/android-generic/vendor_android-generic/-/blob/q10/README.md"><button class="btn mt-4 mb-3 btn-light rounded btn-sm text-primary"><i class="fa fa-fw fa-2x fa-file-text-o"></i>&nbsp;AG Project Readme</button></a>
-                </div>
-                <div class="col" style=""><a href="https://wiki.blissroms.com"><button class="btn mt-4 mb-3 btn-light rounded btn-sm text-primary"><i class="fa fa-fw fa-2x fa-file-text-o"></i>&nbsp;Bliss OS/AG Wiki</button></a>
-                </div>
-                <div class="col" style=""><a href="https://gitlab.com/android-generic/vendor_android-generic"><button class="btn mt-4 mb-3 btn-light rounded btn-sm text-primary"><i class="fa fa-fw fa-gitlab fa-2x" draggable="true"></i> Get The Source</button></a>
+                <div class="col" style="">
+                  <div class="col"><a href="https://github.com/android-generic/vendor_ag" target="_blank"><button class="btn mt-4 mb-3 btn-light rounded btn-sm text-primary"><i class="fa fa-fw fa-gitlab fa-2x" draggable="true"></i> Get The Source</button></a>
+                  </div>
+                  <h6 class="pb-0 mb-0">For Users:</h6><a href="https://docs.blissos.org" target="_blank"><button class="btn mt-4 mb-3 btn-light rounded btn-sm text-primary"><i class="fa fa-fw fa-2x fa-file-text-o"></i>&nbsp;Bliss OS Docs</button><a href="https://t.me/androidgenericpc"><button class="btn mt-4 mb-3 rounded btn-sm btn-secondary text-light"><i class="fa fa-fw fa-telegram fa-2x" draggable="true"></i>&nbsp;Bliss OS Community Chat</button></a></a>
                 </div>
               </div>
             </div>
@@ -551,18 +520,18 @@
       </div>
       <div class="row">
         <div class="">
-          <h2 class="mt-5">Official Flavors (Android 10)</h2>
+          <h2 class="mt-5">Official Flavors (Android 11)</h2>
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <div class="text-dark" id="blissos">
                   <div class="feature_card">
                     <a class="card-image" href="#blissos">
-                      <img src="assets/img/slides/bliss-01.jpg" class="activator">
+                      <img src="assets/img/slides/blissos_11_02.jpeg" class="activator">
                     </a>
                     <div class="card-content ">
                       <i class="material-icons activator card-toggle">more_vert</i>
-                      <h1 class="card-title">Bliss OS 12.12</h1>
+                      <h1 class="card-title">Bliss OS 14.3</h1>
                     </div>
                     <div class="entry-meta">
                       <span class="author-name">Packed to the brim with customization options and added features</span>
@@ -576,7 +545,7 @@
                           <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
                           <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
                           <br>
-                          <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/">AG-10 - Bliss OS - PC builds</a>
+                          <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/">Bliss OS 14.3 (Google Play Store)- PC builds</a>
                         </div>
                       </div>
                     </div>
@@ -587,18 +556,18 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <div class="text-dark" id="lineage">
                   <div class="feature_card">
                     <a class="card-image" href="#lineage">
-                      <img src="assets/img/slides/los-02.jpg" class="activator">
+                      <img src="assets/img/slides/aosp-01.jpg" class="activator">
                     </a>
                     <div class="card-content ">
                       <i class="material-icons activator card-toggle">more_vert</i>
-                      <h1 class="card-title">Lineage OS 17.1</h1>
+                      <h1 class="card-title">AOSP 11</h1>
                     </div>
                     <div class="entry-meta">
-                      <span class="author-name">Clean AOSP look &amp; feel with added features &amp; security</span>
+                      <span class="author-name">Clean AOSP look &amp; feel with added features</span>
                     </div>
                     <div class="card-action">
                       <div class="tabbutton-2" style="margin-bottom: 1.5rem !important; ">
@@ -609,46 +578,13 @@
                           <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
                           <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
                           <br>
-                          <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/lineage/">AG-10 - Lineage OS - PC builds</a>
+                          <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/">AG-11 - AOSP Stock (No app stores) - PC builds</a>
                         </div>
                       </div>
                     </div>
                     <div class="card-reveal">
-                      <span class="card-title">Lineage OS<i class="material-icons right">close</i></span>
-                      <p> an open-source Android distribution, is available for several devices, with more being continuously added thanks to the biggest, yet ever growing list of contributors.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="text-dark" id="carbon">
-                  <div class="feature_card">
-                    <a class="card-image" href="#carbon">
-                      <img src="assets/img/slides/carbon-04.jpg" class="activator">
-                    </a>
-                    <div class="card-content ">
-                      <i class="material-icons activator card-toggle">more_vert</i>
-                      <h1 class="card-title">Carbon ROM 8</h1>
-                    </div>
-                    <div class="entry-meta">
-                      <span class="author-name">A feature packed ROM with a little bit of everything.</span>
-                    </div>
-                    <div class="card-action">
-                      <div class="tabbutton-3" style="margin-bottom: 1.5rem !important; ">
-                        <input id="tabbutton-3-one" type="checkbox" name="tabbutton-s" style="font-size: 1.7rem; margin-left: -10px;">
-                        <label for="tabbutton-3-one" class="text-dark btn rounded btn-sm btn-outline-light" style="font-size: 1.7rem;"><i class="now-ui-icons arrows-1_share-66 mr-1"></i> Download</label>
-                        <div class="tabbutton-3-content">
-                          <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                          <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                          <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                          <br>
-                          <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/carbon/">AG-10 - Carbon ROM - PC builds</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title">Carbon ROM<i class="material-icons right">close</i></span>
-                      <p>CarbonROM is an aftermarket firmware based on the Android Open Source Project created with the purpose of adding versatility and customization to stock Android. Stability is our highest priority; our vision is to be the best alternative to a stock operating system for your device.</p>
+                      <span class="card-title">AOSP 11<i class="material-icons right">close</i></span>
+                      <p>Stock Android 11, with our PC support patches and Desktop UI features added into the mix.</p>
                     </div>
                   </div>
                 </div>
@@ -662,9 +598,8 @@
       <div class="row" id="download">
         <div class="col-md-8 mx-auto text-center">
           <h2 class="mb-4"> Want To Test Our Other AG Flavors? </h2>
-          <p class="lead mb-3 text-warning"> !! We have AG-11 Alpha Builds available for testing !!<br></p>
           <p class="lead mb-3 text-light" style="">We post at least one test build for every ROM we port over, and this includes our bleeding-edge development builds of Android 11.&nbsp;<br><br></p>
-          <p class="mb-5"> For those looking to get a good baseline for a personal or work project, we recommend starting with our stock AOSP builds (Android 10) and basing project needs from there.s</p>
+          <p class="mb-5"> For those looking to get a good baseline for a personal or work project, we recommend starting with our stock AOSP builds (Android 10/11, non-gapps or foss) and basing project needs from there.</p>
           <p class="alert text-white alert-danger">Please do not request for support on any of these builds as we will not be providing user support. Only development support will be provided.</p>
           <div class="tabbutton-9" style="margin-bottom: 1.5rem !important; ">
             <input id="tabbutton-9-one" type="checkbox" name="tabbutton-s" style="font-size: 1.7rem; margin-left: -10px;">
@@ -693,15 +628,15 @@
         <div class="col-md-4">
           <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="https://avatars0.githubusercontent.com/u/65220149?s=200&amp;v=4" width="150">
             <h1>Boringdroid</h1>
-			<a href="http://boringdroid.github.io/" target="_blank"><i class="fab fa-google p-2" style="font-size: 300%;"></i></a>
+            <a href="http://boringdroid.github.io/" target="_blank"><i class="fab fa-google p-2" style="font-size: 300%;"></i></a>
             <a href="https://github.com/boringdroid" target="_blank"><i class="fab fa-github p-2" style="font-size: 300%;"></i></a>
             <p class="mb-0">Boringdroid is a boring project to provide patch set to run multi-window on low version AOSP.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="https://avatars.githubusercontent.com/u/16156670?s=200&v=4" width="150">
+          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="https://avatars.githubusercontent.com/u/16156670?s=200&amp;v=4" width="150">
             <h1>Bliss OS</h1>
-			<a href="http://blissos.org/" target="_blank"><i class="fab fa-google p-2" style="font-size: 300%;"></i></a>
+            <a href="http://blissos.org/" target="_blank"><i class="fab fa-google p-2" style="font-size: 300%;"></i></a>
             <a href="https://gitlab.com/BlissRoms-x86" target="_blank"><i class="fab fa-git p-2" style="font-size: 300%;"></i></a>
             <p class="mb-0">An open-source operating system based on Android with customizations, options and added security features.</p>
           </div>
@@ -742,7 +677,7 @@
               <a href="https://t.me/androidgenericpc"><button class="btn btn-icon rounded btn-sm btn-light mx-1 btn-twitter" type="button" data-placement="top" data-toggle="tooltip" title="PC - Chat with us">
                   <i class="fa fa-fw fa-2x fa-telegram"></i>
                 </button></a>
-              <a href="https://gitlab.com/android-generic/vendor_android-generic"><button class="btn btn-icon rounded btn-sm btn-light mx-1 btn-facebook" type="button" data-placement="top" data-toggle="tooltip" title="Checkout the source">
+              <a href="https://github.com/android-generic/vendor_ag"><button class="btn btn-icon rounded btn-sm btn-light mx-1 btn-facebook" type="button" data-placement="top" data-toggle="tooltip" title="Checkout the source">
                   <i class="fa fa-fw fa-2x fa-gitlab"></i>
                 </button></a>
               <a href="https://github.com/android-generic"><button class="btn btn-icon rounded btn-sm btn-light mx-1 btn-linkedin" type="button" data-placement="top" data-toggle="tooltip" title="Checkout our source">
@@ -764,12 +699,12 @@
                   </a>
                 </li>
                 <li class="list-inline-item mx-2">
-                  <a href="https://gitlab.com/android-generic/vendor_android-generic/-/blob/q10/README.md" class="text-light" target="_blank">
+                  <a href="https://github.com/android-generic/vendor_ag/-/blob/q10/README.md" class="text-light" target="_blank">
                     <small>DOCUMENTATION</small>
                   </a>
                 </li>
                 <li class="list-inline-item mx-2">
-                  <a href="https://gitlab.com/android-generic/vendor_android-generic/-/blob/q10/LICENSE" class="text-light" target="_blank">
+                  <a href="https://github.com/android-generic/vendor_ag/-/blob/q10/LICENSE" class="text-light" target="_blank">
                     <small>LICENSE</small>
                   </a>
                 </li>
