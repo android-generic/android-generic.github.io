@@ -39,6 +39,25 @@
  transition: all 0.3s ease-out;
 }
 
+.feature_card .card-image2 {
+ display: block;
+ max-height: 270px;
+ overflow: hidden;
+}
+
+.feature_card .card-image2 img {
+ display: block;
+ position: relative;
+ border-radius: 2px 2px 0 0;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ width: 100%;
+ height: auto;
+ transition: all 0.3s ease-out;
+}
+
 .feature_card .card-content {
  position: relative;
 }
